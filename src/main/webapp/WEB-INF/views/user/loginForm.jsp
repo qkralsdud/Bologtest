@@ -8,11 +8,11 @@
   <label for="username">username: </label>
   <input type="text" class="form-control" placeholder="Enter username"  name="username">&nbsp;&nbsp;
   <label for="Password">Password:</label>
-  <input type="password" class="form-control" placeholder="Enter password"  name="password">
+  <input type="password" class="form-control" placeholder="Enter password"  name="password">&nbsp;&nbsp;
   <button type="submit" class="btn btn-primary">로그인</button>
 </form>
 </div>
-
+<br>
 <%@ include file="../layout/footer.jsp" %>
 
 
