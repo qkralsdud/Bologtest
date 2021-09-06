@@ -21,6 +21,14 @@ public class UserController {
 		this.session = session;
 	}
 	
+//	@RequestMapping(value="/some/path", method = RequestMethod.POST)
+//	public void ResponseEntity<?> someMethod(HttpServletResponse response) {
+//	   Cookie myCookie = new Cookie("cookieName", cookieValue);
+//	   myCookie.setMaxAge(쿠키 expiration 타임 (int));
+//	   myCookie.setPath("/"); // 모든 경로에서 접근 가능 하도록 설정
+//	   response.addCookie(myCookie);
+//	}
+	
 	@GetMapping("/home")
 	public String home() {
 		return "home";
