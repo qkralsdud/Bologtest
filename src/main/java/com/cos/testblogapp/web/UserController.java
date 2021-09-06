@@ -38,14 +38,13 @@ public class UserController {
 	
 	@PostMapping("/login")
 	public String login(LoginReqDto dto) {
-		System.out.println(dto.getUsername());
-		System.out.println(dto.getPassword());
+		
 		User userEntity = userRepository.mLogin(dto.getUsername(), dto.getPassword());
 		
 		if(userEntity == null) {
 			return "redirect:/loginForm";
 		} else {
-			session.setAttribute("principal", userEntity);
+			session.setAttribute("user", userEntity);
 			return "redirect:/home";
 		}
 	}

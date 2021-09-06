@@ -4,7 +4,7 @@
 <%@ include file="layout/header.jsp" %>
 
 
-<h1>${sessionScope.principal.username }</h1>
+<h1>${sessionScope.user.username }</h1>
 
 
 <%@ include file="layout/footer.jsp" %>
